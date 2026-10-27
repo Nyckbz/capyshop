@@ -1,1 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-padrao: #ee6825;
+    --cor-padrao-hover: #ffa3badc;
+    --cor-fonte: #fff;
+    --cor-fonte-p:#555;
+    --cor-btn:#563434;
+    --cor-btn-hover:#fe4595ee;
+    --cor-btn-fonte:#060606;
+    --cor-fonte-corpo:#d4375e;
+    --cor-fonte-corpo-leve:#f37d3d;
+}   
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: var(--cor-fonte-corpo);
+    line-height: 1.6;
+}
+
+.banner{
+    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao)); 
+}
+
+
+.banner.linha{
+    margin-top: 70px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;   
+}   
+
+.navbar{    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: var(--cor-fonte);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.banner p{
+    color: var(--cor-fonte);
+}
+
+p{
+    color: var(--cor-fonte-p);
+}
+
