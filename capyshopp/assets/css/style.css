@@ -7,6 +7,8 @@
 
 :root{
     --cor-padrao: #ee6825;
+    --cor-background-imagem: #e79c71;
+    --cor-background-hover-imagem: #945c33;
     --cor-padrao-hover: #ffa3badc;
     --cor-fonte: #fff;
     --cor-fonte-p:#555;
@@ -25,7 +27,8 @@ body{
 }
 
 .banner{
-    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao)); 
+    background: radial-gradient(var(--cor-background-hover-imagem), var(--cor-background-imagem)); 
+    height: 110vh;
 }
 
 
@@ -34,16 +37,23 @@ body{
 }
 
 .container{
-    max-width: 1300px;
+    max-width: 2000px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;   
+    padding-left: 70px;
+    padding-right: 70px;   
 }   
 
 .navbar{    
     display: flex;
     align-items: center;
     padding: 20px;
+}
+
+/* Logo da Capyshopp */
+.logo img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
 }
 
 nav{
@@ -77,3 +87,62 @@ p{
     color: var(--cor-fonte-p);
 }
 
+.linha{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.banner .linha {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 30px;
+    min-height: 75vh;
+}
+
+.col-2 {
+    flex: 1 1 50%;
+    min-width: 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: var(--cor-fonte-corpo);
+}
+
+.col-2 p {
+    color: var(--cor-fonte);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.col-2 img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    padding: 0;
+    margin: auto;
+}
+
+.btn {
+text-decoration: none;
+color: var(--cor-fonte);
+background: var(--cor-btn);
+padding: 8px 30px;
+margin: 10% 0;  
+border-radius: 50px;
+}
+
+.btn:hover {
+    background: var(--cor-btn-hover);
+    color: var(--cor-btn-fonte);
+    transition: 0.7s;
+}
